@@ -1,0 +1,14 @@
+// In addition to less mixins of https://github.com/FortAwesome/Font-Awesome
+
+@import 'variables';
+
+.fa (@icon) {
+  .@{fa-css-prefix}-@{icon} {
+    &:before {
+      content: '@{fa-var-@{icon}}';
+    }
+  }
+}
+
+// here goes your icons
+.fa(calendar);
